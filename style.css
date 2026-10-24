@@ -1,0 +1,118 @@
+/* Steller's Jay Studio : les couleurs du geai de Steller (bleu profond, huppe noire, strie blanche). */
+
+:root {
+  --paper: #f6f3ec;
+  --card: #fffdf8;
+  --ink: #12151c;
+  --ink-soft: #3c4250;
+  --mute: #6b7180;
+  --line: #e2ddd1;
+  --jay: #2457a8;
+  --jay-deep: #163c78;
+  --jay-soft: #e3ebf7;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0f1218;
+    --card: #171b23;
+    --ink: #eef0f4;
+    --ink-soft: #c4c9d3;
+    --mute: #8c93a1;
+    --line: #262c37;
+    --jay: #6d9be0;
+    --jay-deep: #a9c4ef;
+    --jay-soft: #1b2638;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--jay); text-underline-offset: 3px; }
+a:hover { color: var(--jay-deep); }
+img { max-width: 100%; display: block; }
+
+.wrap { max-width: 1040px; margin: 0 auto; padding-inline: 24px; }
+
+/* En-tête */
+.top { padding-block: 28px; }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; }
+.brand img { width: 40px; height: 40px; }
+.brand span { font: 600 18px/1 "Bricolage Grotesque", system-ui, sans-serif; letter-spacing: -0.2px; }
+.top nav { display: flex; gap: 22px; font-size: 15px; }
+.top nav a { color: var(--ink-soft); text-decoration: none; }
+.top nav a:hover { color: var(--ink); }
+
+/* Accueil */
+.hero { padding-block: 56px 72px; display: grid; grid-template-columns: 1.35fr 1fr; gap: 48px; align-items: center; }
+.kicker { font-size: 13px; font-weight: 600; letter-spacing: 1.6px; text-transform: uppercase; color: var(--jay); margin: 0 0 18px; }
+h1, h2, h3 { font-family: "Bricolage Grotesque", system-ui, sans-serif; letter-spacing: -0.02em; text-wrap: balance; }
+h1 { font-size: clamp(38px, 6vw, 62px); line-height: 1.04; margin: 0 0 22px; font-weight: 700; }
+.lede { font-size: 20px; color: var(--ink-soft); max-width: 34ch; margin: 0; }
+.hero-mark { justify-self: center; width: min(320px, 70%); aspect-ratio: 1; border-radius: 36%; background: var(--jay-soft); display: grid; place-items: center; }
+.hero-mark img { width: 72%; }
+
+section { padding-block: 48px; }
+h2 { font-size: clamp(26px, 3.4vw, 34px); margin: 0 0 8px; }
+.section-lede { color: var(--mute); margin: 0 0 32px; max-width: 60ch; }
+
+/* Les apps */
+.apps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.app { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 14px; }
+.app header { display: flex; align-items: center; gap: 16px; }
+.app header img { width: 64px; height: 64px; border-radius: 15px; border: 1px solid var(--line); }
+.app h3 { font-size: 24px; margin: 0; }
+.status { font-size: 13px; font-weight: 600; color: var(--mute); }
+.status.live { color: #2f7a4f; }
+.app p { margin: 0; color: var(--ink-soft); }
+.app .links { margin-top: auto; padding-top: 6px; display: flex; flex-wrap: wrap; gap: 10px; }
+.button { display: inline-flex; align-items: center; height: 42px; padding-inline: 18px; border-radius: 999px; font-weight: 600; font-size: 15px; text-decoration: none; background: var(--ink); color: var(--paper); }
+.button:hover { color: var(--paper); opacity: 0.88; }
+.button.ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
+.button.ghost:hover { color: var(--ink); border-color: var(--ink-soft); }
+
+/* Engagements */
+.promises { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; border-top: 1px solid var(--line); padding-top: 32px; }
+.promises h3 { font-size: 19px; margin: 0 0 6px; }
+.promises p { margin: 0; color: var(--ink-soft); font-size: 16px; }
+
+/* Le nom */
+.story { display: grid; grid-template-columns: 1fr 1.6fr; gap: 40px; align-items: start; }
+.story p { margin: 0 0 14px; color: var(--ink-soft); max-width: 62ch; }
+
+/* Contact */
+.contact { background: var(--ink); color: var(--paper); border-radius: 28px; padding: 40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+.contact h2 { margin: 0 0 6px; color: var(--paper); }
+.contact p { margin: 0; opacity: 0.75; }
+.contact a.button { background: var(--paper); color: var(--ink); }
+
+/* Pages de texte */
+.doc { max-width: 720px; padding-block: 24px 72px; }
+.doc h1 { font-size: clamp(32px, 5vw, 44px); }
+.doc h2 { font-size: 22px; margin: 36px 0 8px; }
+.doc p, .doc li { color: var(--ink-soft); }
+.doc .updated { color: var(--mute); font-size: 15px; }
+.todo { background: var(--jay-soft); border-radius: 12px; padding: 2px 8px; color: var(--jay-deep); font-weight: 600; }
+
+/* Pied de page */
+footer { border-top: 1px solid var(--line); margin-top: 40px; padding-block: 28px 40px; color: var(--mute); font-size: 15px; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+footer nav { display: flex; gap: 20px; }
+footer a { color: var(--mute); }
+
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; padding-block: 24px 40px; gap: 32px; }
+  .hero-mark { width: 200px; justify-self: start; }
+  .apps, .promises, .story { grid-template-columns: 1fr; }
+  .top nav { display: none; }
+  .contact { padding: 28px; }
+}

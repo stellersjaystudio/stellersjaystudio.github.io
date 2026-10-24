@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Steller's Jay Studio">
+  <!-- corps : le bleu profond du geai -->
+  <path d="M27 36 C17 41 11 50 8 60 L33 60 C40 53 44 45 43 37 Z" fill="#2457A8"/>
+  <path d="M8 60 C13 56 20 54 27 55 L33 60 Z" fill="#163C78"/>
+  <!-- tête et huppe noires -->
+  <path d="M24 31 C23 24 19 15 10 5 C19 8 26 12 30 16 C28 12 27 9 26 6 C31 10 34 14 36 19 C43 19 48 24 48 31 C48 38 42 42 35 42 C28 42 23 37 24 31 Z" fill="#12151C"/>
+  <!-- bec -->
+  <path d="M47 28 L59 31.5 L47 34.5 Z" fill="#12151C"/>
+  <!-- strie blanche au-dessus de l'œil, et l'œil -->
+  <path d="M36 25.5 Q40 24 43 25.5" stroke="#F6F3EC" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <circle cx="40" cy="29.5" r="1.9" fill="#F6F3EC"/>
+</svg>
