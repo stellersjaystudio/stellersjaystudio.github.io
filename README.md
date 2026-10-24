@@ -4,7 +4,7 @@ Site statique publié sur GitHub Pages (dépôt `stellersjaystudio.github.io`).
 
 - `index.html` : présentation du studio et de ses apps (kaimono, noko.)
 - `mentions-legales/`, `confidentialite/` : pages exigées pour le compte développeur Google Play
-- `logo.svg` : le geai de Steller
+- `jay.png` (oiseau seul), `logo-full.png` (logo complet), `favicon.png`, `apple-touch-icon.png` : tirés du logo de Nicolas
 
 Aperçu local : `python3 -m http.server 8766 --directory studio` (depuis le dossier Courses).
 
